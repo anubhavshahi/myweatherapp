@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1>Weather App</h1>
+          <div class="form-group">
+            <input
+              type="text"
+              id="location"
+              class="form-control"
+              placeholder="Enter city name"
+            />
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="getWeatherInfo()"
+          >
+            Get Weather
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div id="weather-info"></div>
+          <div
+            id="empty-input-alert"
+            class="alert alert-success"
+            style="display: none; margin-top: -300px; text-align: center"
+          >
+            Please enter a city name.
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://api.weatherstack.com/"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    background-image: url("https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/23-12-2022_WMO_Bosnia-Herzegovina.jpg/image1170x530cropped.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+  }
+
+  .container {
+    margin-top: 30px;
+  }
+
+  h1 {
+    text-align: center;
+    color: rgb(6, 6, 6);
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    background-color: #005f43;
+    border: none;
+  }
+
+  #weather-info {
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.7
+    ); 
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+  }
+
+  #weather-info img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  #temp {
+    font-size: 80px;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 10px #fff;
+    animation-name: cooldown;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+  }
+
+  #desc {
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+  }
+
+  @media (max-width: 768px) {
+    .col-md-6.col-md-offset-3 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
